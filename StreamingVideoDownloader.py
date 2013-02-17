@@ -5,7 +5,7 @@ import os
 # Step 1 : Find flashplayer's pid : 
 
 os.system("pgrep -f flashplayer > pid.txt")
-f=open('/home/shinchan/pid.txt','r')
+f=open('pid.txt','r')
 x=int(f.readline())
 
 # Step 2 : Navigate through RAM : 
@@ -14,7 +14,7 @@ os.system("ls /proc/%d/fd -l > list.txt" %x)
 
 # Step 3 : Note down the number associated with '/tmp/FlashXXXXXX (deleted)
 
-s=open('~/list.txt','r').read()
+s=open('list.txt','r').read()
 loc=s.find('/tmp/Flash') # will contain loc of '/'
 
 end=loc-5 #end location
@@ -32,6 +32,5 @@ name=raw_input("Enter Video name : ")
 name=name.replace(' ','_')
 os.system("cp /proc/%d/fd/%d ~/%s.flv" %(x,number,name))
 	
-
 
 
