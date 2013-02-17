@@ -10,5 +10,5 @@ Usage on Ubuntu is as follows :
 3. Enter the file name.
 4. The file will be saved in the home directory of the user with the given file name.
 5. 
-6. NOTE : I just noticed that in some cases the video doesn't seem to be stored at all and hence in those cases, the method
+6. NOTE : I just noticed that in some cases the video doesn't seem to be stored at all and hence in those cases the method
 7.        will obviously fail and hence the script.
