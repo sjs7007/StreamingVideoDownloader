@@ -14,7 +14,7 @@ os.system("ls /proc/%d/fd -l > list.txt" %x)
 
 # Step 3 : Note down the number associated with '/tmp/FlashXXXXXX (deleted)
 
-s=open('/home/shinchan/list.txt','r').read()
+s=open('~/list.txt','r').read()
 loc=s.find('/tmp/Flash') # will contain loc of '/'
 
 end=loc-5 #end location
